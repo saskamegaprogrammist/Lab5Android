@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/project_navigation"
+    app:startDestination="@+id/navigation_start">
+
+    <fragment
+        android:id="@+id/navigation_start"
+        android:name="com.spiridonova.kotlin105.forecast.ForecastListFragment"
+        android:label="Start fragment"
+        tools:layout="@layout/start_fragment" >
+
+    </fragment>
+
+
+</navigation>

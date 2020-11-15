@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kotlin105</string>
+    <string name="card_title_info">Date</string>
+    <string name="card_title">date value</string>
+    <string name="card_secondary_text_info">Min temperature</string>
+    <string name="card_secondary_text">min temperature value</string>
+    <string name="card_supporting_text_info">condition</string>
+    <string name="card_supporting_text">condition value</string>
+    <string name="new_activity">start new activity</string>
+    <string name="test_text">Wonderful weather</string>
+</resources>
