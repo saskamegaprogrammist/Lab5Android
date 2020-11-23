@@ -992,7 +992,7 @@ interface ForecastAPI {
     }
 
 
-    @Headers("X-Yandex-API-Key: 7a8221d4-03b8-4b31-bb5f-d0786fc42af1")
+    @Headers("X-Yandex-API-Key: adc03362-b083-46b1-80dc-3639804510f4")
     @GET("/v2/forecast")
     fun getForecast(
         @Query("lat") lat: String?,

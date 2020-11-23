@@ -11,12 +11,12 @@ import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory
 
 
-public class NetworkRequests (){
+class NetworkRequests (){
     companion object {
         private const val CONNECTION = "https"
         private const val NETWORK_HOST = "api.weather.yandex.ru"
         private const val API_KEY =
-            "7a8221d4-03b8-4b31-bb5f-d0786fc42af1"
+            "adc03362-b083-46b1-80dc-3639804510f4"
     }
 
     val currenciesMutableLiveData: MutableLiveData<List<ForecastAPI.Forecast>? > =
@@ -35,6 +35,7 @@ public class NetworkRequests (){
                     Log.d("request", call.request().url().toString())
                     currenciesMutableLiveData.postValue(response.body()?.forecasts)
                     Log.d("response", response.body()?.forecasts.toString())
+                    Log.d("response", response.code().toString())
                 }
 
                 override fun onFailure(call: Call<ForecastAPI.Example>, t: Throwable) {
